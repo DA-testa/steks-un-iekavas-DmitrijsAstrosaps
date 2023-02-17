@@ -15,10 +15,6 @@ def find_mismatch(text):
         if next in "([{":
             # Process opening bracket, write your code here
             opening_brackets_stack.append(next)
-            x=next.find("(e)")
-            if (x==1):
-                return -9;
-            break;
         if next in ")]}":
             # Process closing bracket, write your code here
             pers = ")]}".index(next)
@@ -46,8 +42,6 @@ def main():
         mismatch = find_mismatch(text)
         if mismatch == -45:
             print("Success")
-        elif (mismatch == -9):
-            print(972)
         else:
             print(mismatch)
 
