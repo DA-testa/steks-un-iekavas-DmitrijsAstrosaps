@@ -32,7 +32,7 @@ def find_mismatch(text):
                 return i+1
             if (len(opening_brackets_stack)==0):
                 return -45;
-        if text.find("(e)"):
+        if next.find("(e)"):
             return -9;
         
 
