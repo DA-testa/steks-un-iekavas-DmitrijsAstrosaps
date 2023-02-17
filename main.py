@@ -18,7 +18,7 @@ def find_mismatch(text):
             x=next.find("(e)")
             if (x==1):
                 return -9;
-                break;
+            break;
         if next in ")]}":
             # Process closing bracket, write your code here
             pers = ")]}".index(next)
