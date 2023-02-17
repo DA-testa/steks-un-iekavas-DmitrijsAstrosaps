@@ -36,13 +36,6 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    if ("I" in text):
-        text = input()
-        mismatch = find_mismatch(text)
-        if mismatch == -45:
-            print("Success")
-        else:
-            print(mismatch)
     if ("F" in text):
         text = input()
         mismatch = find_mismatch(text)
@@ -50,6 +43,8 @@ def main():
             print("Success")
         else:
             print(mismatch)
+    #elif ("F" in text):
+
 
 if __name__ == "__main__":
     main()
