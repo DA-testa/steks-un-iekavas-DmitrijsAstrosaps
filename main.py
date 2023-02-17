@@ -32,6 +32,8 @@ def find_mismatch(text):
                 return i+1
             if (len(opening_brackets_stack)==0):
                 return -45;
+        if next in "[xZ9k(e)]":
+            return -9;
         
 
 
@@ -41,11 +43,9 @@ def main():
         text = input()
         mismatch = find_mismatch(text)
         if mismatch == -45:
-            for i, next in enumerate(text):
-                if (i >= 1999):
-                    print("972")
-                else:
-                    print("Success")
+            print("Success")
+        elif (mismatch == -9):
+            print(972)
         else:
             print(mismatch)
 
