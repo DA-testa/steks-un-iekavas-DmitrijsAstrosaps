@@ -29,7 +29,7 @@ def find_mismatch(text):
             if (len(opening_brackets_stack)>0) and (opening_brackets_stack[len(opening_brackets_stack)-1]==idiot):
                 opening_brackets_stack.pop()
             else:
-                return i
+                return i+2
         if (len(opening_brackets_stack)==0):
             return -45;
 
