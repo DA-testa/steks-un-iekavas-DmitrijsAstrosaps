@@ -26,7 +26,7 @@ def find_mismatch(text):
                     idiot = "["
                 case 2:
                     idiot = "{"
-            if (len(opening_brackets_stack)>0) and (opening_brackets_stack[len(opening_brackets_stack)-1]==pers):
+            if (len(opening_brackets_stack)>0) and (opening_brackets_stack[len(opening_brackets_stack)-1]==idiot):
                 opening_brackets_stack.pop()
             else:
                 return i+1
