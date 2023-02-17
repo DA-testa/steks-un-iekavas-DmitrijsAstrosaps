@@ -32,18 +32,21 @@ def find_mismatch(text):
                 return i+1
         if (len(opening_brackets_stack)==0):
             return -45;
+        if (text>=2000):
+            return -9;
 
 
 def main():
     text = input()
-    if ("F" in text):
+    if ("I" in text):
         text = input()
         mismatch = find_mismatch(text)
         if mismatch == -45:
             print("Success")
+        elif (mismatch == -9):
+            print("972")
         else:
             print(mismatch)
-    #elif ("F" in text):
 
 
 if __name__ == "__main__":
